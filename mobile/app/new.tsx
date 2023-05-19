@@ -11,7 +11,7 @@ import Icon from '@expo/vector-icons/Feather'
 import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
 import { Link } from 'expo-router'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 export default function NewMemory() {
   const { bottom, top } = useSafeAreaInsets()
