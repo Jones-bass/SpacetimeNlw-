@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const isAuthenticated = cookies().has('token')
 
   return (
-    <html lang="ptBR">
+    <html lang="en">
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100`}
       >
@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
 
           {/* Right */}
-          <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
+          <div className="flex max-h-screen flex-col overflow-y-scroll bg-[url(../assets/bg-stars.svg)] bg-cover">
             {children}
           </div>
         </main>
